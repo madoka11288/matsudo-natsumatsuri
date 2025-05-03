@@ -1,0 +1,303 @@
+@charset "UTF-8";
+/* 共通設定 */
+body {
+  margin: 0;
+  font-family: 'Yu Gothic', sans-serif;
+  color: #555;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* ヘッダー */
+.header {
+  background-image: url("images/top.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1297px;
+  position: relative;
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 100vh;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    padding: 0 10px;
+    word-break: keep-all;
+  }
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  font-size: 5rem;
+  color: white;
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
+
+/* ナビゲーション */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #c84040;
+  z-index: 1000;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  list-style: none;
+  padding: 25px 40px;
+  margin: 0;
+  background-color: #c84040;
+}
+
+.nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .nav li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Newsセクション */
+.news {
+  padding: 40px 20px;
+  background: #fff9c4;
+  text-align: center;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.news-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* SNSカード */
+.sns {
+  background: #fff9c4;
+  padding: 40px 0;
+}
+
+.sns .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-weight: bold;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.twitter {
+  background-color: #90caf9;
+}
+
+.insta {
+  background-color: #f48fb1;
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-inner img {
+  width: 40px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .card-inner img {
+    width: 30px;
+  }
+}
+
+/* 日程 */
+.date-section {
+  padding: 40px 20px;
+}
+
+.date-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fuukei {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.date-info {
+  color: #555;
+}
+
+.date-info h2 {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+}
+
+.date-info p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* アクセス */
+.access {
+  padding: 40px 20px;
+  text-align: center;
+  background: #fff9c4;
+}
+
+.access-btn {
+  background: #fdd835;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #333;
+}
+
+/* まつど夏まつり紹介 */
+.about {
+  background: #1a3153;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.feature img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.feature p {
+  margin-top: 10px;
+}
+
+/* フッター */
+.footer {
+  padding: 20px;
+  background: #eee;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 20px;
+}
+
+/* 画像調整 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
